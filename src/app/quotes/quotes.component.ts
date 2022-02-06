@@ -32,9 +32,22 @@ export class QuoteComponent implements OnInit {
     quote.id = quoteLength+1;
     quote.creationDate = new Date(quote.creationDate)
     this.quotes.push(quote)
-  
     }
-    
+
+    initialUpVotes!: number;
+    currentUpVotes!: number;
+    counter!: number;
+    mostUpVotes(){
+      this.initialUpVotes = 0
+      this.currentUpVotes = 0
+  
+      for(this.counter=0 ; this.counter < this.quotes.length; this.counter++) {
+        this.currentUpVotes = this.quotes[this.counter].upvotes;
+        if(this.currentUpVotes > this.initialUpVotes){this.initialUpVotes = this.currentUpVotes}
+      }
+      return  this.initialUpVotes
+    }
+
   constructor() { }
 
   ngOnInit(): void {
