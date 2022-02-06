@@ -7,4 +7,3 @@ export class HighlighterDirective {
   constructor(private elem:ElementRef){}
 
 }
-
