@@ -14,6 +14,9 @@ export class QuoteComponent implements OnInit {
     new Quote(2,'Kiptoo','Never interrupt your enemy when he is making a mistake.','Napoleon Bonaparte',new Date(2022,1,25),0,0),
     new Quote(2,'Kiptoo','When you have eliminated the impossible, whatever remains, however improbable, must be the truth.','Sherlock Holmes',new Date(2022,2,1),0,0),];
 
+    toggleDetails(index: number){
+      this.quotes[index].showDescription=!this.quotes[index].showDescription;
+    }
   constructor() { }
 
   ngOnInit(): void {
