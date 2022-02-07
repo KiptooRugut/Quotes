@@ -1,22 +1,20 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 #author,
 #timePassed {
-    color: rgb(213, 228, 4);
+    color: rgb(36, 224, 36);
     font-weight: 700;
 }
 
-button[id="dislike"] {
+button.vote1 {
     background-color: red;
     color: white;
     font-size: 18px;
-    width: 60px;
 }
 
-button[id="like"] {
-    background-color: hsl(90, 73%, 26%);
+button.vote {
+    background-color: green;
     color: white;
     font-size: 18px;
-    width: 60px;
 }
 
 #thumbUp,
