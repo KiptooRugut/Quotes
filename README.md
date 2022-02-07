@@ -10,6 +10,7 @@ This is Quote application where a user can access the quotes,check the quote det
 
 ## Setup/Installation Instructions
 To access this application, click the link below.
+
 [link](https://kiptoorugut.github.io/Quotes/).
 
 To get the project into your local machine:
