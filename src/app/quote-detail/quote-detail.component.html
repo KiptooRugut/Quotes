@@ -1,21 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
+<div class="container ">
+    <div class="row">
+        <div class="col-md-6">
+            <p>
+                —{{quote.author}} , {{quote.creationDate|dateCount}} Days Ago
+            </p>
+            <!-- <p> {{quote.completeDate|dateCount}} days ago</p> -->
+        </div>
+        <div class="col-md-6">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-</head>
-
-<body>
-    <p>The quote author is <span id="author">{{quote.author}}</span></p>
-    <p>This quote was added by <strong>{{quote.name}}</strong>.</p>
-    <p>Added <span id="timePassed">{{quote.creationDate|timeCount}} days ago</span>.</p>
-
-    <div class="clicks d-flex justify-content-space-between">
-        <button id="like" class="btn btn-sm " (click)='upvote()'>{{quote.upvotes}}<i class="fa fa-thumbs-up" id="thumbUp"></i></button>
-        <button class="btn btn-sm " (click)='downvote()' id="dislike">{{quote.downvotes}}<i class="fa fa-thumbs-down"id="thumbDown"></i></button>
-        <button id="delete-quote" class="btn btn-outline-danger" (click)='removeQuote(true)'>Delete Quote</button>
+            <p>
+                Posted By {{quote.name}}
+            </p>
+        </div>
+        <div class="col-md-6">
+            <i (click)='likeButtonClick()'> <button class="vote">Vote-Up</button></i> {{numberOfLikes}} &nbsp;&nbsp;
+            <i (click)='dislikeButtonClick()'> <button class="vote1">Vote-Down</button> </i> {{numberOfDislikes}} <br><br>
+        </div>
+        <div class="col-md-6">
+            <button class="btn btn-outline-danger" (click)='quoteDelete(true)'>Delete Quote</button>
+        </div>
     </div>
-</body>
-
-</html>
+</div>
