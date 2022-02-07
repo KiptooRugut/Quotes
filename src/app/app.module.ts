@@ -4,20 +4,20 @@ import { FormsModule } from '@angular/forms'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { QuoteComponent } from './quotes/quotes.component';
+import { QuoteComponent } from './quote/quote.component';
+import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
+import { HighlightDirective } from './highlight.directive';
 import { TimeCountPipe } from './time-count.pipe';
-import { HighlighterDirective } from './highlight.directive';
-import { QuotesFormComponent } from './quotes-form/quotes-form.component';
-import { QuotesDetailComponent } from './quote-detail/quote-detail.component';
+import { QuoteFormComponent } from './quote-form/quote-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuoteComponent,
-    QuotesFormComponent,
-    QuotesDetailComponent,  
+    QuoteDetailComponent,
+    HighlightDirective,
     TimeCountPipe,
-    HighlighterDirective,   
+    QuoteFormComponent
   ],
   imports: [
     BrowserModule,

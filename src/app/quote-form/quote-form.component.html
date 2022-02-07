@@ -8,7 +8,7 @@
                     <p>Add new quote</p>
                     <div class="form-group">
                         <label for="name">Your Name</label>
-                        <input type="text" placeholder="Alphonce" class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name='ngModel' autocomplete="off" required>
+                        <input type="text" placeholder="Name" class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name='ngModel' autocomplete="off" required>
                         <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
                             <p>Name is required</p>
                         </div>
