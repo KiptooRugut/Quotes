@@ -11,21 +11,21 @@ This is Quote application where a user can access the quotes,check the quote det
 ## Setup/Installation Instructions
 To access this application, click the link below.
 
-[link](https://kiptoorugut.github.io/Quotes/).
+Click on this [link](https://kiptoorugut.github.io/Quotes/).
 
 To get the project into your local machine:
-Open your terminal
-Create a folder and navigate to the folder you created.
-Run https://github.com/KiptooRugut/Quotes.git
-Then check the folder to confirm the project is in your local machine.
+* Open your terminal
+* Create a folder and navigate to the folder you created.
+* Run https://github.com/KiptooRugut/Quotes.git
+* Then check the folder to confirm the project is in your local machine.
 
 ## Technologies used
 The languages used in development are:
-Typescript
-Javascript.
-Html.
-Css
-Bootstrap
+* Typescript
+* Javascript.
+* Html.
+* Css
+* Bootstrap
 
 ## Running unit tests
 
