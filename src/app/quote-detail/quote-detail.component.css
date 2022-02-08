@@ -16,8 +16,3 @@ button.vote {
     color: white;
     font-size: 18px;
 }
-
-#thumbUp,
-#thumbDown {
-    font-size: 20px;
-}
